@@ -143,7 +143,7 @@ module.exports = function( grunt ) {
           }],
           fileExclusionRegExp: /^(.git|node_modules|modulizr|media|test)$/,
           wrap: {
-            start: license + "\n;(function(window, document, undefined){",
+            start: license + "\n(function(window, document, undefined){",
             end: "})(this, document);"
           },
           onBuildWrite: function (id, path, contents) {
